@@ -20,6 +20,10 @@ document.getElementById('calculate-button').addEventListener('click',function(){
      totalCostInput.innerText=totalCost;
     
     
+    let restbalanceInput =document.getElementById('rest-balance');
     
+    const restBalance=parseFloat(totalIncomeInput.value)-totalCost;
+    restbalanceInput.innerText=restBalance;
+
     
 });
