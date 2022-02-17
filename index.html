@@ -12,6 +12,11 @@
         css link
     ------------>
     <link rel="stylesheet" href="style.css">
+     <!-- --------------  
+        font awsome link
+    ------------------->
+    <script src="https://kit.fontawesome.com/7d5a68d628.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!------- -------------
@@ -22,7 +27,7 @@
             <!-- <div class=" saveup-img">
                 <img src="saveup.png" alt="saveup" srcset="">
             </div> -->
-            <h1 class="text-primary"> Shop <span class="shop" >Up</span></h1>
+            <h1 class="text-primary">Money<span class="shop" >Up</span></h1>
         </div>
     </header>
     <!------- -------------
@@ -33,29 +38,70 @@
     <!------- -------------
     main section start
     --------------------->
-    <main>
-        <section class="container">
-            <div class="d-flex justify-content-between align-items-center w-100">
+    <main class="body-color">
+        <section class="container ">
+            <div class="d-flex justify-content-between align-items-center">
                 <div class="row row-cols-7 me-3">
                     <img src="images/saving pic.jpg" alt="" srcset="">
                 </div>
-                <div class="cols-5">
+                <div class="cols-5 bg-light p-4">
                     <!-- income field start -->
                     <div>
                     <h5 class="text-center">Income</h5>
                     <div class="d-flex justify-content-center align-items-center">
-                     <h6>Income:</h6>
-                     <input type="text" name="" id="total-income">
+                     <h6 class="">Income:</h6>
+                     <input class="ms-2" type="text" name="" placeholder="Enter your income" id="total-income">
                     </div>
                    </div>
                  <!-- income field end -->
 
                  <!-- expenses field start -->
-                   <div>
-                    <h5 class="text-center">Expenses</h5>
+                   <div  class="">
+                    <h5 class="text-center mt-2">Expenses</h5>
                     <div class="d-flex justify-content-center align-items-center">
-                     <h6>Food:</h6>
-                     <input type="text" name="" id="food-cost">
+
+                <!-- food field start -->
+
+                     <h6 class="mt-4">Food:</h6>
+                     <input class="ms-4" type="text" name="" placeholder="Enter your food cost" id="food-cost">
+                    </div>
+
+                <!-- food field end -->
+
+                 <!-- rent field start -->
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h6 class="mt-4">Rent:</h6>
+                        <input class="ms-4" type="text" placeholder="Enter your rent cost" name="" id="rent-cost">
+                       </div>
+
+                 <!-- rent field end -->
+
+                 <!-- cloths field start -->
+                       <div class="d-flex justify-content-center align-items-center">
+                        <h6 class="mt-4">Cloths:</h6>
+                        <input class="ms-3" type="text" placeholder="Enter your cloths cost" name="" id="cloths-cost">  
+                       </div>
+                         <!-- cloths field end -->
+
+
+                       <button type="button" class="btn btn-primary mt-4 button" id="calculate-button">Calculate</button>
+
+                       <div class="mt-4 text-center">
+                           <h5>Total Expenses: $<span id="total-cost">000</span> </h5>
+                           <h5>Balance: $<span id="rest-balance">000</span> </h5>
+                       </div>
+
+                       <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="mt-4 justify-content-center align-items-center ">Save:</h6>
+                            <input class="ms-4" type="text" placeholder="Enter saving amount" name="" id="save-money">
+                            <span class="p-4">%</span>
+                            <button type="button" class="btn btn-primary" id="calculate-button">save</button>
+                           </div>
+
+                           <div class="mt-4 text-center">
+                            <h5>Saving Amount: $<span id="saving-Amount">000</span> </h5>
+                            <h5>Remaining Balance: $<span id="rest-balance">000</span> </h5>
+                        </div>
                     </div>
                    </div>
                    <!-- expenses field end -->

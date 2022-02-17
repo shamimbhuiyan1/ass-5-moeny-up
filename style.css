@@ -4,8 +4,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(243, 216, 214);
+}
+.body-color {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .shop {
   color: indigo;
   font-size: 50px;
+}
+.button {
+  margin-left: 110px;
 }
