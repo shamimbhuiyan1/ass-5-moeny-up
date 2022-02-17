@@ -12,7 +12,8 @@ document.getElementById('calculate-button').addEventListener('click',function(){
     
     // expenses section 
 
-    let totalCostInput= document.getElementById('total-cost');    
+    let totalCostInput= document.getElementById('total-cost');
+        
      const totalCost = parseFloat(foodInput.value)+parseFloat(rentInput.value)+parseFloat(clothInput.value);
      totalCostInput.innerText=totalCost;
 
@@ -35,7 +36,7 @@ document.getElementById('calculate-button').addEventListener('click',function(){
 document.getElementById('saving-button').addEventListener('click',function(){
 
     const savingInput = document.getElementById('saving-Amount');
-    const savingAmount =(savingInput.innerText/100)* parseFloat(totalIncomeInput.value);
+    const savingAmount =parseFloat(savingInput.innerText/100)* parseFloat(totalIncomeInput.value);
     savingInput.innerText=savingAmount;
 
     // remaining balance after saving 
@@ -43,5 +44,8 @@ document.getElementById('saving-button').addEventListener('click',function(){
     const remainingBalanceInput = document.getElementById('remaining-balance');
     const restBalance = parseFloat(totalIncomeInput.value)-savingAmount;
     remainingBalanceInput.innerText=restBalance;
+
+    totalIncomeInput.value='',
+    savingInput.innerText='';
 });
 
